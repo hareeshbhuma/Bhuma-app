@@ -29,25 +29,37 @@
 			<main class="col-sm-9" id="app">
 				<h3>Ideal Weight Calculator</h3>
 				<br>
-				<table align="center" style="width:53%" table-layout="fixed">
+				<!-- <table style="width:53%" table-layout="fixed">
 					<tr>
 						<td>
-							<label for="weight-field">Age : </label>
-							<input id="weight-field" type="text" class="text-field" value="" placeholder="0.00">
+							<label for="age-field">Age : </label>
+							<input id="age-field" type="number" class="text-field" value="" placeholder="0.00">
 						</td>
 						<td>
-							<label for="moment-field">Gender :  </label>
-							<input id="moment-field" type="text" class="text-field" value="" placeholder="0.00">
+							<label for="weight">Weight(Kg) :  </label>
+							<input id="weight" type="number" class="text-field" value="" placeholder="0.00">
 						</td>
 						<td>
-							<label for="weight-field">Height : </label>
-							<input id="weight-field" type="text" class="text-field" value="" placeholder="0.00">
+							<label for="height">Height(cm): </label>
+							<input id="height" type="number" class="text-field" value="" placeholder="0.00">
 						</td>
-						
+						<!-- <td>
+							<label for="weight-field">Weight(kg): </label>
+							<input id="weight-field" type="number" class="text-field" value="" placeholder="0.00">
+						</td> -->
 					</tr>
-				</table>
-				<br>
-				<button id="calculate" type="submit">Calculate</button>
+				</table> 
+				<form name="bmiForm">
+					Your Weight(kg): <input type="text" name="weight" size="10"><br />
+					Your Height(cm): <input type="text" name="height" size="10"><br />
+					<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+					Your BMI: <input type="text" name="bmi" size="10"><br />
+				
+					</form>
+			</br>
+				
+				
+
 		</main>
 		<br>
 		<aside>
@@ -71,6 +83,7 @@
 				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 					integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 					crossorigin="anonymous"></script>
+					<script src="calculatebmi.js"></script>
 		
 	</body>
 </html>
